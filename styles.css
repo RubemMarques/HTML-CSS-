@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+}
+
+ul {
+
+list-style: none;
+font-size: 30px;
+font-style: italic; font width: 700;
+
+}
+
+a { 
+
+text-decoration: none;
+
+}
+
+body { 
+
+    background: url(./BackGround.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid #fff;
+    box-shadow: 1px 1px 10px 1px #fff;
+    /* border-bottom: 15px ridge #FFF; */
+
+}
+
+header ul {
+
+    /* padding: 5px; */
+    display: flex;
+}
+
+header ul li {
+
+    padding: 5px;
+    /* border-bottom: 1px dashed #FFF; */
+}
+
+header ul li a:hover {
+    
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    
+    color : #c0a717;
+    text-decoration: underline;
+    
+
+}
+#about p {
+
+
+max-width: 600px;
+margin: 0 auto;
+text-align: justify;
+
+}
+
+.container {
+
+    text-align: center;
+}
+
+.container .nome h1 {
+    margin: 15px;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.container .nome h5 {
+
+    margin: 15px;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+#arrow{
+
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+
+    to {
+            visibility: hidden;
+
+    }
+
+}
+
+.rotate{
+
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+
+    display: block !important;
+
+}
+
+.form{
+
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double #FFF; */
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.fomr input{
+
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.fomr button{
+
+    width: 15%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #c0a717;
+    color: #464646;
+    font-weight: 600px;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    margin-top: 5px;
+
+}
+
+.form button:hover {
+
+    background-color: #9c551b;
+    color: #FFF;
+}
+
+#animation{
+
+    transition: 300ms;
+}
+
+@media only screen and (max-width:480px) {
+
+.container .name h1 {
+
+    font-size: 5px;
+}
+
+#about p {
+
+    max-width: 80%;
+    text-align: justify;
+
+}
+
+}
